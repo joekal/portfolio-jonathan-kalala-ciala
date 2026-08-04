@@ -1,0 +1,198 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalala@portfolio: ~</title>
+    <link rel="stylesheet" href="{% static 'app/style.css' %}">
+</head>
+<body>
+
+<div class="container">
+    <div class="ascii-art">                                                                                                          
+     ,--.                         ,--.  ,--.                         ,--. ,--.        ,--.        ,--.         
+     |  | ,---. ,--,--,  ,--,--.,-'  '-.|  ,---.  ,--,--.,--,--,     |  .'   / ,--,--.|  | ,--,--.|  | ,--,--. 
+,--. |  || .-. ||      \' ,-.  |'-.  .-'|  .-.  |' ,-.  ||      \    |  .   ' ' ,-.  ||  |' ,-.  ||  |' ,-.  | 
+|  '-'  /' '-' '|  ||  |\ '-'  |  |  |  |  | |  |\ '-'  ||  ||  |    |  |\   \\ '-'  ||  |\ '-'  ||  |\ '-'  | 
+ `-----'  `---' `--''--' `--`--'  `--'  `--' `--' `--`--'`--''--'    `--' '--' `--`--'`--' `--`--'`--' `--`--'
+    </div>
+
+    <div class="prompt">
+        <span class="prompt-user">kalala@sysadmin</span><span class="prompt-symbol">:$</span> 
+        <span class="command typewriter">cat profile.txt</span>
+    </div>
+    
+    <p>
+        <span class="green-text">nom:</span> Jonathan Kalala Ciala<br>
+        <span class="green-text">rôle:</span> junior cybersecurity analyst<br>
+        <span class="green-text">localisation:</span> Kinshasa, DR Congo<br>
+        <span class="green-text">contact:</span> (243) 823874247 | <a href="mailto:kalalajonathan297@gmail.com">kalalajonathan297@gmail.com</a>
+    </p>
+    <p>
+        Ingénieur en informatique (Université Protestante au Congo) spécialisé en sécurité de l'information. 
+        J'apporte plus de 5 ans d'expérience en génie logiciel et 2 ans en architecture et déploiement de solutions 
+        sécurisées, à la fois dans le cloud et sur site.
+    </p>
+
+    <!-- SECTION CERTIFICATIONS -->
+    <div class="prompt">
+        <span class="prompt-user">kalala@sysadmin</span><span class="prompt-symbol">:$</span> 
+        <span class="command">ls -la ./certifications/</span>
+    </div>
+    
+    <div class="grid">
+        <!-- AWS -->
+        <div class="card">
+            <div class="img-container">
+                <img src="{% static 'app/images/logo-aws.jpg' %}" alt="logo-aws">
+            </div>
+            <div class="card-title">aws</div>
+            <ul>
+                <li>cloud practitioner</li>
+                <li>re/start graduate</li>
+                <li>cloud practitioner essentials</li>
+                <li>cloud quest</li>
+                <li>technical essentials</li>
+            </ul>
+        </div>
+
+        <!-- CISCO -->
+        <div class="card">
+            <div class="img-container">
+                <img src="{% static 'app/images/logo-cisco.jpg' %}" alt="logo-cisco">
+            </div>
+            <div class="card-title">cisco</div>
+            <ul>
+                <li>junior cybersecurity analyst</li>
+                <li>cyberOps associate</li>
+                <li>industrial cybersecurity</li>
+                <li>python essentials 1</li>
+            </ul>
+        </div>
+
+        <!-- GOOGLE -->
+        <div class="card">
+            <div class="img-container">
+                <img src="{% static 'app/images/logo-google.jpg' %}" alt="logo-google">
+            </div>
+            <div class="card-title">google</div>
+            <ul>
+                <li>cybersecurity professional</li>
+                <li>project management</li>
+            </ul>
+        </div>
+                <!-- voir plus -->
+        <div class="mt-10 text-center">
+        <a href="./certifications.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-500/50 text-white font-medium transition-all duration-300 backdrop-blur-md group shadow-lg shadow-cyan-500/5">
+            <span>Voir toutes les certifications</span>
+        </a>
+        </div>
+    </div>
+
+    <!-- SECTION EXPERIENCES -->
+    <div class="prompt">
+        <span class="prompt-user">kalala@sysadmin</span><span class="prompt-symbol">:$</span> 
+        <span class="command">tail -n 3 /var/log/experience.log</span>
+    </div>
+    <p>
+        <span class="green-text">[+]</span> <strong>Orange / Google Cybersecurity Program</strong> (jan 2026 - mar 2026)<br>
+        Analyse de cybersécurité, détection des menaces via SIEM (Splunk/Chronicle), réponse aux incidents via Wireshark. Application des frameworks NIST CSF et RMF. Intégration d'outils d'IA pour identifier les failles.
+    </p>
+    <p>
+        <span class="green-text">[+]</span> <strong>Orange / AWS Re-start Program</strong> (sep 2025 - dec 2025)<br>
+        Formation intensive sur les concepts avancés du cloud computing. Déploiement et sécurisation de services AWS.
+    </p>
+    <p>
+        <span class="green-text">[+]</span> <strong>Equity BCDC S.A.</strong> (jul 2024 - aou 2024)<br>
+        Développement d'APIs RESTful sécurisées en .NET Core pour la gestion des réseaux ATM. Implémentation d'architectures microservices.
+    </p>
+    <!-- SECTION PROJETS ET ARTICLES -->
+    <div class="prompt">
+        <span class="prompt-user">kalala@sysadmin</span><span class="prompt-symbol">:$</span> 
+        <span class="command">find ./projects -type f</span>
+    </div>
+    <div class="grid">
+        <!-- Archivio -->
+        <div class="card large">
+            <div class="img-container">
+                <img src="https://via.placeholder.com/400x200/050505/00ff00?text=archivio+platform" alt="archivio">
+            </div>
+            <div class="card-title">archivio</div>
+            <p>
+                Solution d'archivage numérique sécurisée (multi-tenant). Intègre la gestion des rôles, des workflows de validation et des systèmes de sauvegarde automatisés.
+                <br><br><a href="https://hdevelopment.site/" target="_blank">./lancer_demo.sh</a>
+            </p>
+        </div>
+
+        <!-- Medium Articles -->
+        <div class="card large">
+            <div class="img-container">
+                <img src="https://via.placeholder.com/400x200/050505/00ff00?text=medium+articles" alt="medium">
+            </div>
+            <div class="card-title">publications techniques</div>
+            <p>
+                Articles de recherche sur l'automatisation système :<br>
+                - automatisation des rapports financiers avec bash & cron (nov 2025).<br>
+                - surveillance des connexions utilisateurs et alertes (nov 2025).
+                <br><br><a href="https://medium.com/@kalalajonathan297" target="_blank">./lire_articles.sh</a>
+            </p>
+        </div>
+           <!-- voir plus -->
+        <div class="mt-10 text-center">
+        <a href="./projects.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-500/50 text-white font-medium transition-all duration-300 backdrop-blur-md group shadow-lg shadow-cyan-500/5">
+            <span>Voir tous les projets</span>
+        </a>
+        </div>
+
+           <!-- voir plus -->
+        <div class="mt-10 text-center">
+        <a href="./articles.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-500/50 text-white font-medium transition-all duration-300 backdrop-blur-md group shadow-lg shadow-cyan-500/5">
+            <span>Voir tous les articles</span>
+        </a>
+        </div>
+    </div>
+
+    <!-- SECTION COMPETENCES -->
+    <div class="prompt">
+        <span class="prompt-user">kalala@sysadmin</span><span class="prompt-symbol">:$</span> 
+        <span class="command">cat skills.json</span>
+    </div>
+    <div class="skills-grid">
+        <div class="skills-col">
+            <div class="card-title">security & system</div>
+            <ul>
+                <li>nmap, metasploit, burp suite</li>
+                <li>wireshark, tcpdump</li>
+                <li>splunk, wazuh, elk stack</li>
+                <li>kali, red hat, ubuntu, debian</li>
+            </ul>
+        </div>
+        <div class="skills-col">
+            <div class="card-title">dev & automation</div>
+            <ul>
+                <li>python, c, js/ts</li>
+                <li>react, next.js, django, fastapi</li>
+                <li>puppet, shell scripting</li>
+                <li>aws cloudformation</li>
+            </ul>
+        </div>
+        <div class="skills-col">
+            <div class="card-title">tools & workflow</div>
+            <ul>
+                <li>pycharm, vs code, android studio</li>
+                <li>jira, ms project, github projects</li>
+                <li>cloud: aws, gcp, azure</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="prompt" style="margin-top: 50px;">
+        <span class="prompt-user">kalala@sysadmin</span><span class="prompt-symbol">:$</span> 
+        <span class="command" style="animation: blink-cursor 1s step-end infinite; border-right: 10px solid var(--term-green); padding-right: 5px;">_</span>
+    </div>
+
+</div>
+
+</body>
+</html>
