@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications - Jonathan Kalala</title>
+    <link rel="stylesheet" href="{% static 'app/style.css' %}">
+</head>
+<body>
+<div class="container">
+    <div class="prompt">
+        <span class="prompt-user">kalala@sysadmin</span><span class="prompt-symbol">:$</span>
+        <span class="command">ls -la ./certifications/</span>
+    </div>
+    <h1>Certifications</h1>
+    <div class="grid">
+        <!-- AWS -->
+        <div class="card">
+            <div class="img-container">
+                <img src="{% static 'app/images/logo-aws.jpg' %}" alt="logo-aws">
+            </div>
+            <div class="card-title">aws</div>
+            <ul>
+                <li>cloud practitioner</li>
+                <li>re/start graduate</li>
+                <li>cloud practitioner essentials</li>
+                <li>cloud quest</li>
+                <li>technical essentials</li>
+            </ul>
+        </div>
+
+        <!-- CISCO -->
+        <div class="card">
+            <div class="img-container">
+                <img src="{% static 'app/images/logo-cisco.jpg' %}" alt="logo-cisco">
+            </div>
+            <div class="card-title">cisco</div>
+            <ul>
+                <li>junior cybersecurity analyst</li>
+                <li>cyberOps associate</li>
+                <li>industrial cybersecurity</li>
+                <li>python essentials 1</li>
+            </ul>
+        </div>
+
+        <!-- GOOGLE -->
+        <div class="card">
+            <div class="img-container">
+                <img src="{% static 'app/images/logo-google.jpg' %}" alt="logo-google">
+            </div>
+            <div class="card-title">google</div>
+            <ul>
+                <li>cybersecurity professional</li>
+                <li>project management</li>
+            </ul>
+        </div>
+    </div>
+    <div class="mt-10 text-center">
+        <a href="{% url 'index' %}" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-500/50 text-white font-medium transition-all duration-300 backdrop-blur-md group shadow-lg shadow-cyan-500/5">
+            <span>Retour à l'accueil</span>
+        </a>
+    </div>
+</div>
+</body>
+</html>

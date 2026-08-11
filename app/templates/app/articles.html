@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - Jonathan Kalala</title>
+    <link rel="stylesheet" href="{% static 'app/style.css' %}">
+</head>
+<body>
+<div class="container">
+    <div class="prompt">
+        <span class="prompt-user">kalala@sysadmin</span><span class="prompt-symbol">:$</span>
+        <span class="command">find ./articles -type f</span>
+    </div>
+    <h1>Articles</h1>
+    <div class="grid">
+        <div class="card large">
+            <div class="img-container">
+                <img src="{% static 'app/images/medium.jpg' %}" alt="medium">
+            </div>
+            <div class="card-title">Publications techniques</div>
+            <p>Articles de recherche sur l'automatisation système :</p>
+            <ul>
+                <li>Automatisation des rapports financiers avec bash & cron (nov 2025)</li>
+                <li>Surveillance des connexions utilisateurs et alertes (nov 2025)</li>
+            </ul>
+            <p><a href="https://medium.com/@kalalajonathan297" target="_blank">Voir sur Medium</a></p>
+        </div>
+    </div>
+    <div class="mt-10 text-center">
+        <a href="{% url 'index' %}" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-500/50 text-white font-medium transition-all duration-300 backdrop-blur-md group shadow-lg shadow-cyan-500/5">
+            <span>Retour à l'accueil</span>
+        </a>
+    </div>
+</div>
+</body>
+</html>

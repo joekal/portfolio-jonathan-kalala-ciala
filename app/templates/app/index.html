@@ -10,12 +10,14 @@
 <body>
 
 <div class="container">
-    <div class="ascii-art">                                                                                                          
+    <div class="ascii-wrapper">
+    <pre class="ascii-art">                                                                                                          
      ,--.                         ,--.  ,--.                         ,--. ,--.        ,--.        ,--.         
      |  | ,---. ,--,--,  ,--,--.,-'  '-.|  ,---.  ,--,--.,--,--,     |  .'   / ,--,--.|  | ,--,--.|  | ,--,--. 
 ,--. |  || .-. ||      \' ,-.  |'-.  .-'|  .-.  |' ,-.  ||      \    |  .   ' ' ,-.  ||  |' ,-.  ||  |' ,-.  | 
 |  '-'  /' '-' '|  ||  |\ '-'  |  |  |  |  | |  |\ '-'  ||  ||  |    |  |\   \\ '-'  ||  |\ '-'  ||  |\ '-'  | 
  `-----'  `---' `--''--' `--`--'  `--'  `--' `--' `--`--'`--''--'    `--' '--' `--`--'`--' `--`--'`--' `--`--'
+    </pre>
     </div>
 
     <div class="prompt">
@@ -84,7 +86,7 @@
         </div>
                 <!-- voir plus -->
         <div class="mt-10 text-center">
-        <a href="./certifications.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-500/50 text-white font-medium transition-all duration-300 backdrop-blur-md group shadow-lg shadow-cyan-500/5">
+        <a href="{% url 'certifications' %}" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-500/50 text-white font-medium transition-all duration-300 backdrop-blur-md group shadow-lg shadow-cyan-500/5">
             <span>Voir toutes les certifications</span>
         </a>
         </div>
@@ -113,22 +115,22 @@
         <span class="command">find ./projects -type f</span>
     </div>
     <div class="grid">
-        <!-- Archivio -->
+        <!-- UNimarket-upc -->
         <div class="card large">
             <div class="img-container">
-                <img src="https://via.placeholder.com/400x200/050505/00ff00?text=archivio+platform" alt="archivio">
+                <img src="{% static 'app/images/unimarket-upc.jpg' %}" alt="unimarket-upc">
             </div>
-            <div class="card-title">archivio</div>
+            <div class="card-title">Unimarket-upc</div>
             <p>
-                Solution d'archivage numérique sécurisée (multi-tenant). Intègre la gestion des rôles, des workflows de validation et des systèmes de sauvegarde automatisés.
-                <br><br><a href="https://hdevelopment.site/" target="_blank">./lancer_demo.sh</a>
+                UniMarket est une plateforme d'echange creee pour faciliter le partage de services academiques entre les etudiants de l'Universite Protestante au congo (UPC).
+                <br><br><a href="https://unimarket-t5li.onrender.com/" target="_blank">./lancer_demo.sh</a>
             </p>
         </div>
 
         <!-- Medium Articles -->
         <div class="card large">
             <div class="img-container">
-                <img src="https://via.placeholder.com/400x200/050505/00ff00?text=medium+articles" alt="medium">
+                <img src="{% static 'app/images/medium.jpg' %}" alt="medium">
             </div>
             <div class="card-title">publications techniques</div>
             <p>
@@ -140,14 +142,14 @@
         </div>
            <!-- voir plus -->
         <div class="mt-10 text-center">
-        <a href="./projects.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-500/50 text-white font-medium transition-all duration-300 backdrop-blur-md group shadow-lg shadow-cyan-500/5">
+        <a href="{% url 'projets' %}" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-500/50 text-white font-medium transition-all duration-300 backdrop-blur-md group shadow-lg shadow-cyan-500/5">
             <span>Voir tous les projets</span>
         </a>
         </div>
 
            <!-- voir plus -->
         <div class="mt-10 text-center">
-        <a href="./articles.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-500/50 text-white font-medium transition-all duration-300 backdrop-blur-md group shadow-lg shadow-cyan-500/5">
+        <a href="{% url 'articles' %}" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-500/50 text-white font-medium transition-all duration-300 backdrop-blur-md group shadow-lg shadow-cyan-500/5">
             <span>Voir tous les articles</span>
         </a>
         </div>
@@ -193,6 +195,18 @@
     </div>
 
 </div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-title">contact://network</div>
+        <div class="footer-links">
+            <a class="footer-link" href="https://wa.me/243823874247" target="_blank" rel="noreferrer">whatsapp</a>
+            <a class="footer-link" href="https://www.linkedin.com/in/jonathan-kalala-ciala/" target="_blank" rel="noreferrer">linkedin</a>
+            <a class="footer-link" href="https://github.com/joekal" target="_blank" rel="noreferrer">github</a>
+            <a class="footer-link" href="https://medium.com/@kalalajonathan297" target="_blank" rel="noreferrer">medium</a>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
